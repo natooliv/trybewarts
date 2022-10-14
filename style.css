@@ -40,3 +40,8 @@ main {
   align-items: center;
   justify-items: start;
 }
+
+.radio-family {
+  display: flex;
+  flex-direction: column;
+}
