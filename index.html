@@ -29,7 +29,34 @@
   </header>
   <main>
    
-    <form id="evaluation-form"></form>
+    <form id="evaluation-form">
+     
+        <fieldset id="dados-pessoais">
+          <legend>Dados Pessoais</legend>
+          <label for="firstName">
+            <input type="text" id="input-name" placeholder="Nome" />
+           </label>
+           <label for="lastName">
+             <input type="text" id="input-lastname" placeholder="Sobrenome" />
+           </label>
+           <label for="email">
+             <input type="text" id="input-email" placeholder="Email" />
+           </label>
+
+        <label id="label">Casa
+          <select id="house">
+            <option selected disabled value="">Selecione</option>
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+
+          </select>  
+
+        </label>
+      </fieldset>
+        
+    </form>
     <div>
       <img src="images/trybewarts-colored.svg" alt="trybewarts" id="trybewarts-forms-logo">
     </div>
