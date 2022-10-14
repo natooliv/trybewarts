@@ -25,18 +25,18 @@ main {
   align-items: center;
 }
 
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
   height: 500px;
   display: flex;
   align-content: flex-end;
 }
 
-#dados-pessoais{
+#dados-pessoais {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   align-content: space-between;
   justify-content: space-evenly;
   align-items: center;
-  justify-items: start
+  justify-items: start;
 }
