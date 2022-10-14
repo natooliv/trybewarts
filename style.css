@@ -28,7 +28,7 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
-  align-content: flex-end;
+  align-content: space-between;
 }
 
 #dados-pessoais {
