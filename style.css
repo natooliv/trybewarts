@@ -24,12 +24,12 @@ fieldset {
   border-radius: 8px;
   border: 1px solid gray;
   margin-bottom: 16px;
-} 
+ } 
 
 body {
   font-family: 'Ubuntu', sans-serif;
   background-size: cover;
-  height: 100vh; 
+  height: 50px; 
   color: black;
   display: grid;
   place-items: center;
