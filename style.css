@@ -13,7 +13,7 @@ fieldset {
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Helvetica, sans-serif;
   background-size: cover;
   color: black;
   display: grid;
@@ -39,6 +39,7 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
+  width: 100px;
 }
 
 #evaluation-form {
@@ -49,10 +50,6 @@ main {
 
 footer {
   background-color: rgb(50, 167, 145);
-}
-
-#trybewarts-forms-logo {
-  width: 100px;
 }
 
 .textarea {
