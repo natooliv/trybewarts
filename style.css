@@ -1,40 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* form {
-  width: 600px;
-  padding: 32px;
-  border-radius: 16px;
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.3);
-}
-input, textarea {
-  background-color: rgba(0, 0, 0, 0.2);
-  border: none;
-  color: #FFFFFF;
-  padding: 4px 8px; */
-
-
 fieldset {
   padding: 16px;
   border-radius: 8px;
   border: 1px solid gray;
   margin-bottom: 16px;
- } 
+
+}
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   background-size: cover;
-  height: 50px; 
   color: black;
   display: grid;
   place-items: center;
-  /* background-image:url(/images/background.jpg); */
-  background-size: cover;
+
 }
 
 .header {
@@ -42,34 +26,29 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
-
 
 .trybewarts-login {
   display: flex;
+}
 
- }
-
- main {
+main {
   display: flex;
 }
 
- #trybewarts-forms-logo {
+#trybewarts-forms-logo {
   height: 500px;
   display: flex;
- 
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 footer {
   background-color: rgb(50, 167, 145);
-
 }
 
 #trybewarts-forms-logo {
@@ -82,45 +61,9 @@ footer {
 
 #btn-login {
   display: flex;
-
 }
 
 #radio-family {
   display: flex;
   flex-direction: column;
 }
-
-
-
-
-
-
-
-/* #dados-pessoais {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  align-content: space-between;
-  align-items: center;
-  justify-items: start;
-}
-
-.radio-family {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.checkbox-container {
-  display: flex;
-  flex-direction: column;
-}
-
-#boxtexto {
-  width: 250px;
-}
-
-#container {
-  display: flex;
-} */
-
