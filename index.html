@@ -11,103 +11,120 @@
 
 <body>
   <header class="header">
-    <img src="images/trybewarts-header-logo.svg" alt="Logo Trybe" class="trybewarts-header-logo
-    ">
+    <img src="images/trybewarts-header-logo.svg" alt="Logo Trybe" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
+
     <form class="trybewarts-login">
-      <section>
+      <section id="login">
         <input id="email" type="email" name="email" placeholder="Email">
-      </section>
-      <section>
         <input id="senha" type="password" name="password" placeholder="Senha">
-      </section>
-      <section>
         <button id="btn-login">Entrar</button>
       </section>
     </form>
-
   </header>
+
   <main>
+    <fieldset>
+      <form id="evaluation-form">
+        <fieldset id="dados-pessoais">
 
-    <form id="evaluation-form">
+          <legend>Dados Pessoais</legend>
+          <label for="firstName">
+            <input type="text" id="input-name" placeholder="Nome" />
+          </label>
+          <label for="lastName">
+            <input type="text" id="input-lastname" placeholder="Sobrenome" />
+          </label>
+        </fieldset>
+      <fieldset>
+            <input type="text" id="input-email" placeholder="Email">
+      <label for="select">Casa</label>
+        <select id="house">
+          <option selected disabled value="">Selecione</option>
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>      
+    </fieldset>
+  
+    <fieldset>
 
-      <fieldset id="dados-pessoais">
-        <legend>Dados Pessoais</legend>
-        <label for="firstName">
-          <input type="text" id="input-name" placeholder="Nome" />
-        </label>
-        <label for="lastName">
-          <input type="text" id="input-lastname" placeholder="Sobrenome" />
-        </label>
-        <label for="email">
-          <input type="text" id="input-email" placeholder="Email" />
-        </label>
+      <label id="label-family">Qual sua família?</label>
+      <br>
+      <div id="radio-family">
+      <label><input type="radio" name="family" value="Frontend">Frontend</label>
+      <label><input type="radio" name="family" value="Backend">Backend</label>
+      <label><input type="radio" name="family" value="FullStack">FullStack</label>
+    </div>
+    </fieldset>
 
-        <label id="label">Casa
-          <select id="house">
-            <option selected disabled value="">Selecione</option>
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-          </select>
-        </label>
-      </fieldset>
-      <div class="check-container">
-        <div class="radio-family">
-          <label id="label-family">Qual sua família?</label>
-          <label><input type="radio" name="family" value="Frontend">Frontend</label>
-          <label><input type="radio" name="family" value="Backend">Backend</label>
-          <label><input type="radio" name="family" value="FullStack">FullStack</label>
-        </div>
-        <div class="checkbox-container">
-          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-          <div class="checkbox">
-            <label> <input type="checkbox" value="HoFs" class="subject">HoFs</label>
-            <label> <input type="checkbox" value="Jest" class="subject">Jest</label>
-            <label> <input type="checkbox" value="Promises" class="subject">Promises</label>
-            <label> <input type="checkbox" value="React" class="subject">React</label>
-            <label> <input type="checkbox" value="SQL" class="subject">SQL</label>
-            <label> <input type="checkbox" value="Python" class="subject">Python</label>
-          </div>
-        </div>
-        <div class="rate-container">
-          <label id="label-rate">Como você avalia a Trybewarts?</label>
-          <div class="rate">
-            <label><input type="radio" name="rate" value="1">1</label>
-            <label><input type="radio" name="rate" value="2">2</label>
-            <label> <input type="radio" name="rate" value="3">3</label>
-            <label> <input type="radio" name="rate" value="4">4</label>
-            <label> <input type="radio" name="rate" value="5">5</label>
-            <label> <input type="radio" name="rate" value="6">6</label>
-            <label> <input type="radio" name="rate" value="7">7</label>
-            <label> <input type="radio" name="rate" value="8">8</label>
-            <label> <input type="radio" name="rate" value="9">9</label>
-            <label> <input type="radio" name="rate" value="10">10</label>
-            </label>    
 
-          </div>
-          <label class="textarea">Deixe seu comentário:</label>
-          <textarea id="textarea" cols="30" rows="5" maxlength="500"></textarea>
-          <span id="counter"></span>
-          <label id="label-infos">Você concorda com o uso das informações acima?        
-            <input type="checkbox" id ="agreement">
-                </label>
-                <button id="submit-btn" type="submit" disabled>Enviar</button>
-         
+    <fieldset>
+      <label for="label-content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+      <div class="checkbox">
+        <label> <input type="checkbox" value="HoFs" class="subject">HoFs</label>
+        <label> <input type="checkbox" value="Jest" class="subject">Jest</label>
+        <label> <input type="checkbox" value="Promises" class="subject">Promises</label>
+        <label> <input type="checkbox" value="React" class="subject">React</label>
+        <label> <input type="checkbox" value="SQL" class="subject">SQL</label>
+        <label> <input type="checkbox" value="Python" class="subject">Python</label>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <label id="label-rate">Como você avalia a Trybewarts?</label>
+      <div class="rate">
+        <label><input type="radio" name="rate" value="1">1</label>
+        <label><input type="radio" name="rate" value="2">2</label>
+        <label> <input type="radio" name="rate" value="3">3</label>
+        <label> <input type="radio" name="rate" value="4">4</label>
+        <label> <input type="radio" name="rate" value="5">5</label>
+        <label> <input type="radio" name="rate" value="6">6</label>
+        <label> <input type="radio" name="rate" value="7">7</label>
+        <label> <input type="radio" name="rate" value="8">8</label>
+        <label> <input type="radio" name="rate" value="9">9</label>
+        <label> <input type="radio" name="rate" value="10">10</label>
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset id="contador">
+      <label class="textarea">Deixe seu comentário:</label>
+      <br>
+      <textarea id="textarea" cols="30" rows="5" maxlength="500"></textarea>
+      <span id="counter">500</span>
+    </fieldset>
+
+    <fieldset>
+      <label id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" id="agreement">     
+    </fieldset>
+    <fieldset>
+      <button id="submit-btn" type="submit" disabled>Enviar</button>
+    </fieldset>
     </form>
 
-    <div>
+    <form id="form-data">
+      <p id="nome"></p>
+      <p id="email"></p>
+      <p id="casa"></p>
+      <p id="familia"></p>
+      <p id="materias"></p>
+      <p id="avaliacao"></p>
+      <p id="observacoes"></p>
+    </form>
+    </fieldset>
+
+    <section>
       <img src="images/trybewarts-colored.svg" alt="trybewarts" id="trybewarts-forms-logo">
-    </div>
-
+    </section>
   </main>
-  <footer>
-    <p>Direitos reservados à Trybewarts©</p>
-  </footer>
- 
-
   <script src="script.js"></script>
 </body>
+
+<footer>
+  <p>Direitos reservados à Trybewarts©</p>
+</footer>
 
 </html>
