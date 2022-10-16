@@ -63,7 +63,8 @@ function formulario() {
   const ultimoNome = document.getElementById('input-lastname');
   formNome.innerText = `Nome: ${apelido.value} ${ultimoNome.value}`;
   const emailValido = document.getElementById('input-email');
-  loginE.innerText = `Email: ${emailValido.value}`;
+  const emailValido2 = document.getElementById('email2');
+  emailValido2.innerText = `Email: ${emailValido.value}`;
 }
 function formFild2() {
   const subject = document.getElementsByClassName('subject');
